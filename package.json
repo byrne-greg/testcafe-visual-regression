@@ -1,0 +1,31 @@
+{
+  "name": "sample-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "testcafe firefox:headless -s './tests/vrt-screenshots' ./tests/*.visual.test.js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "path": "^0.12.7",
+    "resemblejs": "^3.1.0",
+    "testcafe": "^1.1.1"
+  }
+}
